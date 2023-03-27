@@ -1,0 +1,106 @@
+/* CSS RESET - do not remove */
+/* Reset default browser styles and provide a consistent starting point */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+}
+
+.container-background {
+  background-image: url(../../apple-pie/images/apple-pie.jpg);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  font-size: 100px;
+  font-weight: 400px;
+  color: white;
+}
+
+.intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+  padding: 0;
+  font-weight: lighter;
+  border-bottom: black solid;
+}
+
+.intro article {
+  margin: 50px 0;
+  font-size: 34px;
+  width: 100%;
+}
+
+.recipe-info {
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+  padding: 0;
+  font-weight: lighter;
+  border-bottom: black solid;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 0;
+  font-weight: 350;
+  letter-spacing: 1px;
+}
+
+.ingredients-list {
+  font-size: 30px;
+  list-style-type: symbols(-);
+  line-height: 150%;
+}
+
+.ingredients-list li::marker {
+  content: attr(list-item) "-";
+}
+
+.cooking-info {
+  width: 400px;
+  margin: 40px auto;
+}
+
+.diy {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+  font-weight: lighter;
+}
+
+.direction-list {
+  margin: auto;
+  font-size: 30px;
+  max-width: 90%;
+  line-height: 150%;
+}
+
+.direction-list li::marker {
+  content: counter(list-item) ")";
+}
